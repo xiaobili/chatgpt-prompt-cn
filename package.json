@@ -16,11 +16,32 @@
       "title": "prompt",
       "subtitle": "GPT3 Prompts Search",
       "description": "OpenAI GPT3 Prompt List With Chinese",
-      "mode": "view"
+      "mode": "view",
+      "preferences": [
+        {
+          "data": [
+            {
+              "title": "Paste to Active App",
+              "value": "paste"
+            },
+            {
+              "title": "Copy to Clipboard",
+              "value": "copy"
+            }
+          ],
+          "default": "copy",
+          "description": "The primary action to perform on a selected prompt.",
+          "name": "primaryAction",
+          "required": false,
+          "title": "Primary Action",
+          "type": "dropdown"
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.49.2"
+    "@raycast/api": "^1.49.2",
+    "axios": "^1.3.5"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.5",
